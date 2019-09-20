@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     <div class="six columns">
+            <h1>Cricket Score App</h1>
+            <form action="/scores" method="POST">
+              <label for="exampleEmailInput">Ball score</label>
+              <input class="u-full-width callCostSetting" type="text"  name="currentTotal"
+                placeholder="eg. 1--w2-" value="{{score.currentTotal}}">
+              <button class="button-primary updateSettings" type="submit" name="button">Get Score</button>
+            </form>
+            <div class="{{score.currentTotal}}">
+                <p>  </p>
+            </div>
+          </div>  
+</body>
+</html>
